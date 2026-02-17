@@ -1,5 +1,1 @@
-# test-repository
-Test repository created by Eve for demonstration purposes
-
-## GEN-1114 Verification
-This line was added by the GEN-1114 verification test.
+# test-repository\nTest repository created by Eve for demonstration purposes\n\n## GEN-1114 Verification\nThis line was added by the GEN-1114 verification test.\n\n## Remote Edit\nThis line was added DIRECTLY ON GITHUB to create a conflict.\n
