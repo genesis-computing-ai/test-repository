@@ -1,8 +1,1 @@
-# test-repository
-Test repository created by Eve for demonstration purposes
-
-## GEN-1114 Verification
-This line was added by the GEN-1114 verification test.
-
-## Local Edit
-This line was added LOCALLY to create a conflict.
+# test-repository\nTest repository created by Eve for demonstration purposes\n\n## GEN-1114 Verification\nThis line was added by the GEN-1114 verification test.\n\n## Local Edit\nThis line was added LOCALLY to create a conflict.\n\n## Remote Competing Edit\nThis line was added DIRECTLY ON GITHUB while Eve has a stale clone.\n
