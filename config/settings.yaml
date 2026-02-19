@@ -1,0 +1,5 @@
+# Pipeline configuration
+database: ANALYTICS
+warehouse: COMPUTE_WH
+schedule: daily
+retry_count: 3
