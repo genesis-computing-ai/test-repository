@@ -1,5 +1,6 @@
-# Pipeline configuration
+# Pipeline configuration (updated)
 database: ANALYTICS
 warehouse: COMPUTE_WH
-schedule: daily
-retry_count: 3
+schedule: hourly
+retry_count: 5
+timeout_minutes: 30

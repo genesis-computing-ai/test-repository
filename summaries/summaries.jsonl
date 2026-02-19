@@ -1,0 +1,2 @@
+{"file": "etl/load_orders.py", "summary": "ETL pipeline that joins order and order item data from RAW.ORDERS and RAW.ORDER_ITEMS tables to create the ANALYTICS.FACT_ORDERS fact table for sales analytics."}
+{"file": "sql/create_summary.sql", "summary": "SQL script that aggregates daily revenue metrics by product category from ANALYTICS.FACT_ORDERS and ANALYTICS.DIM_PRODUCTS into the ANALYTICS.DAILY_REVENUE summary table."}

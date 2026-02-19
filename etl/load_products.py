@@ -1,13 +1,11 @@
-"""ETL pipeline that loads product catalog."""
-import snowflake.connector
+"""Product catalog utilities - refactored, no more direct DB access."""
+import json
 
-def load_products():
-    """Read from RAW.PRODUCTS and write to ANALYTICS.DIM_PRODUCTS."""
-    conn = snowflake.connector.connect()
-    cursor = conn.cursor()
-    cursor.execute("""
-        INSERT INTO ANALYTICS.DIM_PRODUCTS
-        SELECT id, name, category, price
-        FROM RAW.PRODUCTS
-    """)
-    conn.close()
+def get_product_categories():
+    """Return list of valid product categories."""
+    return ["electronics", "clothing", "food", "furniture"]
+
+def validate_product(product: dict) -> bool:
+    """Validate a product dict has required fields."""
+    required = {"id", "name", "category", "price"}
+    return required.issubset(product.keys())
